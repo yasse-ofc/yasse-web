@@ -32,19 +32,19 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[YASSE Code of Conduct](https://github.com/ed-henrique/yasseblob/master/CODE_OF_CONDUCT.md).
+[YASSE Code of Conduct](https://github.com/yasse-ofc/yasse-web/blob/main/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
-to <edu.hen.fm@gmail.com>.
+to <yasse.ofc@gmail.com>.
 
 ## I Have a Question
 
 > If you want to ask a question, we assume that you have read the available Documentation.
 
-Before you ask a question, it is best to search for existing [Issues](https://github.com/ed-henrique/yasse/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
+Before you ask a question, it is best to search for existing [Issues](https://github.com/yasse-ofc/yasse-web/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
 If you then still feel the need to ask a question and need clarification, we recommend the following:
 
-- Open an [Issue](https://github.com/ed-henrique/yasse/issues/new).
+- Open an [Issue](https://github.com/yasse-ofc/yasse-web/issues/new).
 - Provide as much context as you can about what you're running into.
 - Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
 
@@ -80,7 +80,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 - Make sure that you are using the latest version.
 - Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the documentation. If you are looking for support, you might want to check [this section](#i-have-a-question)).
-- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/ed-henrique/yasseissues?q=label%3Abug).
+- To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/yasse-ofc/yasse-web/issues?q=label%3Abug).
 - Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
   - Stack trace (Traceback)
@@ -92,12 +92,12 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 <!-- omit in toc -->
 #### How Do I Submit a Good Bug Report?
 
-> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to <edu.hen.fm@gmail.com>.
+> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to <yasse.ofc@gmail.com>.
 <!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [Issue](https://github.com/ed-henrique/yasse/issues/new). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Open an [Issue](https://github.com/yasse-ofc/yasse-web/issues/new). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
 - Explain the behavior you would expect and the actual behavior.
 - Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 - Provide the information you collected in the previous section.
@@ -119,13 +119,13 @@ This section guides you through submitting an enhancement suggestion for YASSE, 
 
 - Make sure that you are using the latest version.
 - Read the documentation carefully and find out if the functionality is already covered, maybe by an individual configuration.
-- Perform a [search](https://github.com/ed-henrique/yasse/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
+- Perform a [search](https://github.com/yasse-ofc/yasse-web/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
 <!-- omit in toc -->
 #### How Do I Submit a Good Enhancement Suggestion?
 
-Enhancement suggestions are tracked as [GitHub issues](https://github.com/ed-henrique/yasse/issues).
+Enhancement suggestions are tracked as [GitHub issues](https://github.com/yasse-ofc/yasse-web/issues).
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
@@ -171,54 +171,9 @@ Use the following commands to clone the rep and download all packages:
 
 ```bash
 nvm 
-git clone git@github.com:ed-henrique/yasse.git
-git branch dev
-git checkout dev
-git pull upstream dev
-cd yasse/backend && npm i
-cd ../frontend && npm i
-cd ../backend/src/crawlers/cheerio_crawlers && npm i
-cd ../http_crawlers && npm i
-cd ../puppeteer_crawlers && npm i
-cd ../../db && npm i
-cd ../.. && touch .env
+git clone git@github.com:yasse-ofc/yasse-web.git
+cd yasse-web && npm i
 ```
-
-Set up `.env` file inside the `backend` folder as following:
-
-```.env
-PROXY_USERNAME=
-PROXY_PASS=
-MONGODB_LINK=
-```
-
-We are currently working with [Webshare](https://www.webshare.io/) proxies. You can get 10 proxies for free there, and that's enough for testing before submitting your code. To acquire your credentials do as following:
-
-1. Create an account in [Webshare](https://www.webshare.io/);
-2. Go inside your dashboard;
-3. Go to `Proxy > Rotating Proxy`;
-4. Get your `Proxy Username` and `Proxy Password` there and paste them in your `PROXY_USERNAME` and `PROXY_PASS` respectively;
-5. You are ready to go.
-
-For the database, we are using [MongoDB](https://www.mongodb.com/). It's also free, and the step by step to get your link is the following:
-
-1. Create an account in [MongoDB](https://www.mongodb.com/);
-2. Go to `Deployment > Database`;
-3. Go to `+Create`, then create a shared cluster hosted wherever and with any name;
-4. Create an `username` and random `password` and store them somewhere for the time being;
-5. Return to `Deployment > Database` and go to `Connect` in your DB;
-6. Select `Connect your application`;
-7. Copy the link given to you and paste it into your `MONGODB_LINK`;
-8. Change the `<password>` field to your created password;
-9. Add the `&keepAlive=true` to the end of your link;
-10. Your link should be looking like this: `mongodb+srv://<user>:<password>@cluster.p2u97.mongodb.net/?retryWrites=true&w=majority&keepAlive=true`;
-11. You are ready to go.
-
-Known ports used in this project:
-
-- `Express API: 3000`
-- `Frontend: 80`
-- `MongoDB: 27017`
 
 ### Commit Messages
 
