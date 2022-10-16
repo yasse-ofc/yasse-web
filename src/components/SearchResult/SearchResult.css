@@ -1,0 +1,12 @@
+.SearchResult {
+
+    color: white;
+    margin-top: 11px;
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #97A4B5;  
+
+}
+
