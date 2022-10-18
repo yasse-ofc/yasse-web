@@ -1,15 +1,12 @@
 import './SearchBar.css';
 
 function SearchBar() {
-  return (
-    <div className="SearchBar">
-      <form>
-        <label >
-          <input  placeholder="Search" className="input-search" type="text" />
-        </label>
-      </form>
-    </div>
-  );
+    return (
+        <input
+            className="SearchBar"
+            placeholder="Series to search for..."
+        ></input>
+    );
 }
 
 export default SearchBar;

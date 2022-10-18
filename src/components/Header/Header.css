@@ -1,0 +1,18 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    height: 50px;
+    max-width: 100%;
+
+    background-color: crimson;
+}
+
+.logo {
+    height: 45px;
+}
+
+h1 {
+    color: white;
+}

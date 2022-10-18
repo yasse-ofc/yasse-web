@@ -1,20 +1,26 @@
 import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Results from './components/Results/Results';
 import SearchBar from './components/SearchBar/SearchBar';
-import SearchResult from './components/SearchResult/SearchResult';
-import SelectionBar from './components/SelectionBar/SelectionBar';
-import SelectionLgs from './components/SelectionLgs/SelectionLgs';
+import SeriesTypeButtons from './components/SeriesTypeButtons/SeriesTypeButtons';
 
 function App() {
-  return (
-    <div className="App">
-     <SearchBar /> 
-     <div className="test">
-      <SelectionBar />
-      <SelectionLgs />
-     </div>
-     <SearchResult />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <div className="sections">
+                <section className="search">
+                    <SeriesTypeButtons />
+                    <SearchBar />
+                </section>
+                <section className="results">
+                    <Results />
+                </section>
+            </div>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

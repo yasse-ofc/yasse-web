@@ -1,0 +1,10 @@
+.results {
+    max-width: 45%;
+    max-height: 70%;
+    border-radius: 30px;
+    background-color: white;
+
+    top: 15%;
+    right: 3%;
+    position: absolute;
+}
