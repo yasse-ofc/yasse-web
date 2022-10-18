@@ -7,7 +7,7 @@ import SeriesTypeButtons from './components/SeriesTypeButtons/SeriesTypeButtons'
 
 function App() {
     return (
-        <div>
+        <div className="main">
             <Header />
             <div className="sections">
                 <section className="search">
