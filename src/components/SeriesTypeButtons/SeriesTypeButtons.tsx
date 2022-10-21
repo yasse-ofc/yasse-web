@@ -2,7 +2,7 @@ import './SeriesTypeButtons.css';
 
 function SeriesTypeButtons() {
     return (
-        <select name="SeriesType">
+        <select className="selectSeriesType" name="SeriesType">
             <option value="Anime">Anime</option>
             <option value="Manga">Manga</option>
             <option value="Novel">Novel</option>

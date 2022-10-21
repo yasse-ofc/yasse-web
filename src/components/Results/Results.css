@@ -2,5 +2,5 @@
     width: 90%;
     height: 90%;
     border-radius: 30px;
-    background-color: white;
+    background-color: var(--secondary);
 }

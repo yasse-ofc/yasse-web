@@ -5,13 +5,19 @@ function Header() {
     return (
         <header className="Header">
             <img className="logo" src={yasseLogo} alt="YASSE Logo" />
-            <h1>YASSE</h1>
-            <select name="Language">
-                <option value="🇺🇸">🇺🇸</option>
-                <option value="🇧🇷">🇧🇷</option>
-            </select>
+            <h1>Yasse</h1>
+            <div className="selectLanguage">
+                <ul>
+                    <DropdownItem language="🇺🇸" />
+                    <DropdownItem language="🇧🇷" />
+                </ul>
+            </div>
         </header>
     );
+}
+
+function DropdownItem(props: { language: string }) {
+    return <li className="dropdownItem">{props.language}</li>;
 }
 
 export default Header;
