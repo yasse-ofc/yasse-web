@@ -2,6 +2,7 @@
     --bg: #040f13;
     --accent: crimson;
     --secondary: white;
+    --speed: 500ms;
 }
 
 body {
@@ -23,8 +24,11 @@ code {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
+    color: var(--secondary);
     text-decoration: none;
 }
