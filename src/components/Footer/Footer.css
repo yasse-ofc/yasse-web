@@ -1,5 +1,6 @@
 .Footer {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 
@@ -9,7 +10,7 @@
     background-color: var(--accent);
 }
 
-span {
+.trademark {
     color: var(--secondary);
     text-align: center;
 }

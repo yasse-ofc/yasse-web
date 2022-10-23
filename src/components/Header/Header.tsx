@@ -6,18 +6,12 @@ function Header() {
         <header className="Header">
             <img className="logo" src={yasseLogo} alt="YASSE Logo" />
             <h1>Yasse</h1>
-            <div className="selectLanguage"></div>
+            <select className="selectLanguage" name="SeriesType">
+                <option value="🇧🇷">🇧🇷</option>
+                <option value="🇺🇸">🇺🇸</option>
+            </select>
         </header>
     );
 }
 
-function DropdownItem(props: { language: string }) {
-    return <li className="dropdownItem">{props.language}</li>;
-}
-
 export default Header;
-
-/*<ul className="menuHead">
-    <DropdownItem language="🇺🇸" />
-    <DropdownItem language="🇧🇷" />
-</ul>*/
