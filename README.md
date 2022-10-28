@@ -28,25 +28,13 @@ The web app to search for the most up-to-date series sources using Yasse API.
 git clone https://github.com/yasse-ofc/yasse-web.git
 ```
 
-2. Create a `.env` file in the root directory of the project and add the following environment variables:
+2. Build the project
 
 ```bash
-cp .env.example .env
+docker-compose build
 ```
 
-See [How to setup your environment](https://github.com/yasse-ofc/.github/blob/main/CONTRIBUTING.md#how-to-setup-your-environment) for more information.
-
-```bash
-MONGODB_DB=
-MONGODB_LINK=
-
-PROXY_USERNAME=
-PROXY_PASS=
-
-API_PORT=
-```
-
-1. Run the project
+3. Run the project
 
 ```bash
 docker-compose up
