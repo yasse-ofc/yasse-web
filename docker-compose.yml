@@ -1,0 +1,16 @@
+version: '3'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                NODE_ENV: development
+        image: 'yasse-web/node:16'
+        container_name: 'web'
+        restart: always
+        ports:
+            - '3000:3000'
+        volumes:
+            - '.:/usr/src/app'
+        command: 'npm start'
