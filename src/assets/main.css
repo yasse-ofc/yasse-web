@@ -1,0 +1,30 @@
+@import './base.css';
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+select {
+  appearance: none;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: var(--secondary);
+  background-color: var(--secondary);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  border-top: 1px solid var(--grey-light);
+  border-radius: 1px;
+}
