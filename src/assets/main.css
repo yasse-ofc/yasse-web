@@ -30,5 +30,5 @@ hr {
 }
 
 hr:last-of-type {
-  visibility: hidden;
+  display: none;
 }
