@@ -26,7 +26,7 @@ import { useSeriesStore } from '../stores/seriesStore';
     justify-content: center;
     height: 60px;
     width: 45%;
-    border-radius: 1.7rem 1.7rem 0 0;
+    border-radius: 1.7rem 0 0;
     color: var(--secondary);
     background-color: var(--accent);
     margin: 0;
@@ -36,9 +36,9 @@ import { useSeriesStore } from '../stores/seriesStore';
 .searchResults {
     width: 90%;
     height: 90%;
-    border-radius: 30px;
+    border-radius: 30px 0 0 30px;
     background-color: var(--secondary);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .seriesGathered {

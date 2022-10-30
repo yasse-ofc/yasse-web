@@ -8,6 +8,26 @@
   --speed: 500ms;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--grey-light);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--grey-light);
+  border-radius: 1rem;
+  margin-block: 10rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 1rem;
+}
+
 body {
   margin: 0;
   padding: 0;
