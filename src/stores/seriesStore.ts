@@ -29,7 +29,7 @@ export const useSeriesStore = defineStore("seriesStore", {
 
 			await axios
 				.get(
-					`https://yasse.live/${this.seriesType}?title=${this.searchTerm}&orderByLatestChapter=true`,
+					`https://yasse.live/${this.seriesType}?title=${this.searchTerm}&sort=>chapter`,
 				)
 				.then((res) => {
 					this.resultData = res.data;
