@@ -5,7 +5,7 @@ import { useSeriesStore } from '../stores/seriesStore';
 
 <template>
     <article class="searchResults">
-        <h2 class="resultText">RESULTADOS DA PESQUISA:</h2>
+        <h2 class="resultText">SEARCH RESULTS:</h2>
         <div class="seriesGathered">
             <Series
                 v-for="series in seriesStore.resultData"

@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
     min-height: 150px;
     width: 90%;
 
@@ -27,6 +27,7 @@
     max-height: 150px;
     max-width: 100px;
     border-radius: 20px;
+    border: 3px solid var(--background);
 }
 
 .seriesInfo {
@@ -38,9 +39,14 @@
     color: var(--background);
 }
 
-a {
+.seriesTitle > a {
     font-size: 1.3vw;
     color: var(--accent);
+}
+
+.seriesTitle > a:hover {
+    color: var(--background);
+    transition: color 0.3s;
 }
 
 .seriesSource {
