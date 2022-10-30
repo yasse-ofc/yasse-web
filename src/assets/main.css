@@ -28,3 +28,7 @@ hr {
   border-top: 1px solid var(--grey-light);
   border-radius: 1px;
 }
+
+hr:last-of-type {
+  visibility: hidden;
+}

@@ -23,10 +23,10 @@ import { useSeriesStore } from '../stores/seriesStore';
   border: 3px solid var(--secondary);
   border-radius: 1rem;
 
-  width: 100%;
+  width: 90%;
   height: 3%;
 
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -38,7 +38,7 @@ import { useSeriesStore } from '../stores/seriesStore';
 
 .selectSeriesType {
   height: 3%;
-  width: 30%;
+  width: 10%;
   background-color: var(--accent);
 }
 </style>

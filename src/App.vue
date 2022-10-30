@@ -42,9 +42,13 @@ main {
 .search, .results {
   display: flex;
   height: 100%;
-  width: 90%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.results {
+  align-items: flex-end;
 }
 </style>

@@ -25,7 +25,7 @@ import { useSeriesStore } from '../stores/seriesStore';
     align-items: center;
     justify-content: center;
     height: 60px;
-    width: 45%;
+    width: 48%;
     border-radius: 1.7rem 0 0;
     color: var(--secondary);
     background-color: var(--accent);
@@ -34,7 +34,7 @@ import { useSeriesStore } from '../stores/seriesStore';
 }
 
 .searchResults {
-    width: 90%;
+    width: 95%;
     height: 90%;
     border-radius: 30px 0 0 30px;
     background-color: var(--secondary);
