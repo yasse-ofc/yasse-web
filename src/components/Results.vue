@@ -45,7 +45,7 @@ import { useSeriesStore } from '../stores/seriesStore';
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     margin-top: 70px;
 }
 
