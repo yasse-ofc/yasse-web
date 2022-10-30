@@ -37,6 +37,7 @@ h1 {
     color: var(--secondary);
     font-size: 1.6rem;
     font-family: 'Pacifico', cursive;
+    font-weight: normal;
 }
 </style>
   
